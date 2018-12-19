@@ -1,19 +1,24 @@
 
-web网站链接数据显示库以及表，表类型的信息并生成mapper类以及xml文件
+web网站连接数据库 按照开发语言,框架以及定制模板生成相关文件 
+意义:方便项目快速的开发
+
+设计模式 ：工厂模式
 
 1.实现连接数据库 database.xml
 
 2.实现连接数据库的所有表 TablesMeataData
 
-3.实现选定表的字段、类型、描述等信息 TableFieldsMeataData
+3.实现选定表的字段,类型,描述等信息 TableFieldsMeataData
 
-4.定义开发语言，框架；例如：java， mybatis
+4.定义开发语言,框架;例如:java,Mybatis
 
-5.定义模板;例如实体类，数据访问类，mapper映射类，mapper映射文件等模板，（包名，导入的包名，类名称，继承类，继承接口，字段，getter//setter等）
+5. 开发语言数据类型与数据库数据类型转换 
+例如: MySQL转换为Java,Java转化为MySQL,ConvertFromMySQLJavaDataType,ConvertToMySQLJavaDataType
 
-4.生成mapper类以及xml文件（需要指定按什么规则生成文件？）
+7.根据开发语言，框架定义模板;例如Java，Mybatis
+实体类，数据访问类，mapper映射类，mapper映射文件等模板,(包名，导入的包名，类名称，继承类，继承接口，字段，getter//setter等)
 
-5.保存文件
+9.根据开发语言,框架 
 
 database.xml
 
@@ -29,3 +34,6 @@ DataBaseMacro:数据库宏定义
 自动生成
 show tables; --查询某个数据库下的所有表
 show full columns from tableName; --查询某个表的所有列数据
+
+git push remote [remote-name] :old-branch-name new-branch-name -- 修改远程分支名称
+git remote [remote-name] set-url  [remote-url] --修改远程仓库地址
