@@ -1,7 +1,31 @@
-﻿
+
 web网站链接数据显示库以及表，表类型的信息并生成mapper类以及xml文件
-1.实现连接数据库
-2.实现连接数据库的所有表
-3.实现选定表的字段、类型、描述等信息
+
+1.实现连接数据库 database.xml
+
+2.实现连接数据库的所有表 TablesMeataData
+
+3.实现选定表的字段、类型、描述等信息 TableFieldsMeataData
+
+4.定义开发语言，框架；例如：java， mybatis
+
+5.定义模板;例如实体类，数据访问类，mapper映射类，mapper映射文件等模板，（包名，导入的包名，类名称，继承类，继承接口，字段，getter//setter等）
+
 4.生成mapper类以及xml文件（需要指定按什么规则生成文件？）
-5.保存文件 
+
+5.保存文件
+
+database.xml
+
+TablesMeataData
+TableFieldsMeataData
+
+LanaguageMacro:语言宏定义
+FrameworkMacro:框架宏定义
+ParametersMacro:参数宏定义
+DataBaseMacro:数据库宏定义
+
+--名称的校验
+自动生成
+show tables; --查询某个数据库下的所有表
+show full columns from tableName; --查询某个表的所有列数据
