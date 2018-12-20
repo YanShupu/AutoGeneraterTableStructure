@@ -6,9 +6,9 @@ web网站连接数据库 按照开发语言,框架以及定制模板生成相关
 
 1.实现连接数据库 database.xml
 
-2.实现连接数据库的所有表 TablesMeataData
+2.实现连接数据库的所有表 TablesMetaData
 
-3.实现选定表的字段,类型,描述等信息 TableFieldsMeataData
+3.实现选定表的字段,类型,描述等信息 TableFieldsMetaData
 
 4.定义开发语言,框架;例如:java,Mybatis
 
